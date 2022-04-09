@@ -1,0 +1,59 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.range {
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 320px;
+}
+
+.range[type="range"]::-webkit-slider-runnable-track {
+    background: #053a5f;
+    height: 10px;
+}
+
+/******** Firefox ********/
+.range[type="range"]::-moz-range-track {
+    background: #053a5f;
+    height: 10px;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -4px;
+    background-color: #5cd5eb;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.draw-grid {
+    display: grid;
+    border: 5px solid black;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
+    cursor: none;
+}
+.grid__cell {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.custom-cursor {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url(./cursor.svg);
+    pointer-events: none;
+    margin-left: -5px;
+    margin-top: -20px;
+}
