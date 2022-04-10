@@ -34,21 +34,9 @@ function createGrid(e) {
         }, 2fr)`;
 }
 
-function mouseMove(e) {
-    /* if (cursor.style.display === 'none')
-        cursor.style.display = 'block' */
-    let x = e.clientX;
-    let y = e.clientY;
-    cursor.style.left = x + "px";
-    cursor.style.top = y + "px";
-}
-function hideCursor() {
-    cursor.style.display = 'none'
-}
+
 
 
 //events
 range.addEventListener('input', showValue)
 range.addEventListener('change', createGrid)
-grid.addEventListener('mousemove', mouseMove)
-//grid.addEventListener('mouseout', hideCursor)

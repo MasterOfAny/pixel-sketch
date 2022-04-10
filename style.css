@@ -41,19 +41,9 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 5px;
     height: 575px;
     width: 575px;
-    cursor: none;
+    cursor: crosshair;
 }
 .grid__cell {
     background-color: white;
     border: 1px solid black;
-}
-
-.custom-cursor {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    background-image: url(./cursor.svg);
-    pointer-events: none;
-    margin-left: -5px;
-    margin-top: -20px;
 }
