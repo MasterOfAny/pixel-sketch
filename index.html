@@ -5,19 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Pixel sketch</title>
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="title">Pixel Sketch</h1>
-    </header>
     <main class="main">
-        <input class="range" type="range" id="volume" name="volume" min="4" max="64" step="4">
-        <label class="range-info" for="volume">Volume</label>
-        <div class="draw-grid">
+        <div class="container">
+            <div class="paint__field">
+                <div class="">
+                    <h1 class="title">Pixel Sketch</h1>
+                    <div class="paint__panel">
 
+                        <input class="color-picker" type="color" value="#000000">
+                        <div class="pen"><img class="panel-item" src="./pen.svg" alt=""></div>
+                        <div class="rainbow-pen"><img class="panel-item" src="./rainbow.svg" alt=""></div>
+                        <div class="eraser"><img class="panel-item" src="./eraser.svg" alt=""></div>
+                    </div>
+                </div>
+                <div class="grid-area">
+                    <div class="grid-size__picker">
+                        <label class="range-info" for="volume">8 x 8</label>
+                        <div class="range-block">
+                            <input class="range" type="range" id="volume" name="volume" min="4" max="64" step="4"
+                                value="8">
+                            <img class="clear" src="./refresh.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="grid__container">
+                        <div class="draw-grid">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer"></footer>
